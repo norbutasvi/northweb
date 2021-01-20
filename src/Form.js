@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import axios from 'axios';
 
 import phone from './images/phone.png';
@@ -38,7 +38,7 @@ function Form() {
         <form>
             <div class="info-box">
                 <div class="info-box__item">
-                    <img src={phone} width="20px" />
+                    <img alt="" src={phone} width="20px" />
                     <div class="text">
                         <p>
                             <strong>TELEFONO NUMERIS</strong><br />
@@ -47,7 +47,7 @@ function Form() {
                     </div>
                 </div>
                 <div class="info-box__item">
-                    <img src={letter} width="20px" />
+                    <img alt="" src={letter} width="20px" />
                     <div class="text">
                         <p>
                             <strong>EL. PAŠTO ADRESAS</strong><br />

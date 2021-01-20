@@ -9,12 +9,12 @@ import customers from './images/customers.svg';
 function Aside() {
     return (
             <aside>
-                <div class="logo"><img src={logo} /></div>
+                <div class="logo"><img alt="" src={logo} /></div>
                 <nav>
                     <ul>
                         <a href="#pradzia">
                         <li id="home">
-                            <img src={homePage} class="menu-icon" />
+                            <img alt="" src={homePage} class="menu-icon" />
                             <div class="title">
                                 PRADŽIA
                             </div>
@@ -22,7 +22,7 @@ function Aside() {
                         </a>
                         <a href="#klientai">
                         <li id="clients">
-                            <img src={customers} class="menu-icon" />
+                            <img alt="" src={customers} class="menu-icon" />
                             <div class="title">
                                 KLIENTAI
                             </div>
@@ -30,7 +30,7 @@ function Aside() {
                         </a>
                         <a href="#darbai">
                         <li id="portfolio">
-                            <img src={portfolio} class="menu-icon" />
+                            <img alt="" src={portfolio} class="menu-icon" />
                             <div class="title">
                                 DARBAI
                             </div>
@@ -38,7 +38,7 @@ function Aside() {
                         </a>
                         <a href="#procesas">
                         <li id="process">
-                            <img src={workStation} class="menu-icon"/>
+                            <img alt="" src={workStation} class="menu-icon"/>
                             <div class="title">
                                 PROCESAS
                             </div>
@@ -46,7 +46,7 @@ function Aside() {
                         </a>
                         <a href="#kontaktai">
                         <li id="contact">
-                            <img src={letter} class="menu-icon" />
+                            <img alt="" src={letter} class="menu-icon" />
                             <div class="title">
                                 KONTAKTAI
                             </div>

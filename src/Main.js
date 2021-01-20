@@ -11,7 +11,6 @@ import team from './images/team.jpg';
 import euro from './images/eurosvg.svg';
 import workFromHome from './images/work-from-home.svg';
 import duration from './images/duration.svg';
-import starPizza from './images/star-pizza.png';
 import completed from './images/completed.png';
 import statistics from './images/statistics.png';
 import prototype from './images/prototype.png';
@@ -22,14 +21,10 @@ import database from './images/database.png';
 import statisticsSvg from './images/statistics.svg';
 import research from './images/research.png';
 import search from './images/search.svg';
-import phone from './images/phone.png';
-import letter from './images/letter.png';
 import altitude from './images/altitude.png';
-import languekspertai from './images/languekspertai.jpg';
 import sniurai from './images/sniurai.jpg';
 import audenis from './images/audenis.png';
 import ecotrip from './images/ecotrip.png';
-import mgvapdaila from './images/mgvapdaila.png';
 import fb_icon from './images/fb_icon.png';
 import kalda_fb from './images/kalda_fb.jpg';
 import kalda_website from './images/kalda_website.png';
@@ -75,13 +70,13 @@ function Main() {
                         </div>
                     </div>
                     <div class="right">
-                        <img src={team} class="hero-image"/>
+                        <img alt="" src={team} class="hero-image"/>
                     </div>
                 </div>
             </div>
             <div class="section__col-3">
                 <div class="item">
-                    <img src={euro} width="64px"/>
+                    <img alt="" src={euro} width="64px"/>
                     <p>
                     6 metų patirtis leis Jums pasiūlyti gerą kainos ir kokybės
                     santykį. Kiekvieno projekto kaina pas mus - <span>80 eurų</span>. 
@@ -89,14 +84,14 @@ function Main() {
                     </p>
                 </div>
                 <div class="item">
-                    <img src={workFromHome} width="64px"/>
+                    <img alt="" src={workFromHome} width="64px"/>
                     <p>
                     Darbą atliksime pagal Jūsų individualius pageidavimus, 
                     mūsų pasiūlymus ar Jums patikusius pavyzdžius.
                     </p>
                 </div>
                 <div div class="item">
-                    <img src={duration} width="64px"/>
+                    <img alt="" src={duration} width="64px"/>
                     <p>
                     Kadangi projektui skiriamas didelis dėmesys dizaino 
                     elementams ir tinkamam funkcionalumo užbaigtumui, 
@@ -111,29 +106,29 @@ function Main() {
                 <div class="container">
                     <div class="content flex-col">
                         <div class="item">
-                            <img src={altitude} width="200px" />
+                            <img alt="" src={altitude} width="200px" />
                         </div>
                         <div class="item">
-                            <img src={audenis} width="200px" />
+                            <img alt="" src={audenis} width="200px" />
                         </div>
                         <div class="item">
-                            <img src={sniurai} class="icon" />
+                            <img alt="" src={sniurai} class="icon" />
                         </div>
                         <div class="item">
-                            <img src={ecotrip} class="icon centered"/>
+                            <img alt="" src={ecotrip} class="icon centered"/>
                         </div>
                         {/* <div class="item">
                             <img src={languekspertai} class="icon" />
                         </div> */}
                         <div class="item">
-                            <img src={kalda_fb} width="200px" />
+                            <img alt="" src={kalda_fb} width="200px" />
                         </div>
                     </div>
                     <div class="content flex-center">
                         <div class="fb-feed">
                             <div class="cover">
-                                <img src={fb_icon} class="absolute"/>
-                                <img src={logo} />
+                                <img alt="" src={fb_icon} class="absolute"/>
+                                <img alt="" src={logo} />
                             </div>
                             <div class="testimonials">
                                 {posts.map(post => <Review post={post} />)}
@@ -150,20 +145,20 @@ function Main() {
                         <h2 class="project__title">KALDA.LT</h2>
                         <p class="project__description">Statybos darbų svetainė</p>
                         <div class="content">
-                            <a href="http://kalda.lt" class="content__image" target="_blank">
+                            <a href="http://kalda.lt" class="content__image" target="_blank" rel="noreferrer">
                                 <div class="background">
                                 </div>
                                 <div class="text">
-                                    <img src={search} height="26px"/>
+                                    <img alt="" src={search} height="26px"/>
                                     NARŠYTI GYVAI
                                 </div>
-                                <img src={kalda_website} />
+                                <img alt="" src={kalda_website} />
                             </a>
                             <div class="content__completed">
                                 <div class="box">
                                     <div class="box__top">
                                         <div class="box__top__icon">
-                                            <img src={completed} />
+                                            <img alt="" src={completed} />
                                         </div>
                                         <div class="box__top__title">
                                             ATLIKTI DARBAI
@@ -173,49 +168,49 @@ function Main() {
                                             <ul>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={statistics} />
+                                                    <img alt="" src={statistics} />
                                                 </div>
                                                 <p>Analizė ir tikslų nustatymas</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={prototype} />
+                                                    <img alt="" src={prototype} />
                                                 </div>
                                                 <p>Svetainės prototipo sudarymas</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={paintPalette} />
+                                                    <img alt="" src={paintPalette} />
                                                 </div>
                                                 <p>Svetainės dizainas</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={wordpress} />
+                                                    <img alt="" src={wordpress} />
                                                 </div>
                                                 <p>Turinio valdymo sistemos diegimas</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={upload} />
+                                                    <img alt="" src={upload} />
                                                 </div>
                                                 <p>Turinio sukėlimas į svetainę</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={database} />
+                                                    <img alt="" src={database} />
                                                 </div>
                                                 <p>Svetainės failų patalpinimas į serverį</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={statisticsSvg} />
+                                                    <img alt="" src={statisticsSvg} />
                                                 </div>
                                                 <p>SEO optimizavimas paieškos sistemoms</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={research} />
+                                                    <img alt="" src={research} />
                                                 </div>
                                                 <p>Svetainės priežiūra ir administravimas</p>
                                             </li>
@@ -224,20 +219,20 @@ function Main() {
                                         <ul>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={slider} />
+                                                    <img alt="" src={slider} />
                                                 </div>
                                                 <p>Svetainėje suprogramuoti du slaiderių komponentai.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={google_analytics} />
+                                                    <img alt="" src={google_analytics} />
                                                 </div>
                                                 <p>įdiegtas google analytics modulis leidžiantis stebėti vartotojų srautą ir daryti 
                                                 jų veiklos svetainėje analizę.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={picture} />
+                                                    <img alt=""src={picture} />
                                                 </div>
                                                 <p>
                                                     Įdiegtas atliktų darbų nuotraukų galerijos modulis.
@@ -253,20 +248,20 @@ function Main() {
                         <h2 class="project__title">AUDENIS.LT</h2>
                         <p class="project__description">Kurortinio viešbučio svetainė</p>
                         <div class="content">
-                            <a href="http://audenis.lt" target="_blank" class="content__image">
+                            <a href="http://audenis.lt" target="_blank" rel="noreferrer" class="content__image">
                                 <div class="background">
                                 </div>
                                 <div class="text">
-                                    <img src={search} height="26px"/>
+                                    <img alt="" src={search} height="26px"/>
                                     NARŠYTI GYVAI
                                 </div>
-                                <img src={audenis_website} />
+                                <img alt="" src={audenis_website} />
                             </a>
                             <div class="content__completed">
                                 <div class="box">
                                     <div class="box__top">
                                         <div class="box__top__icon">
-                                            <img src={completed} />
+                                            <img alt="" src={completed} />
                                         </div>
                                         <div class="box__top__title">
                                             ATLIKTI DARBAI
@@ -276,49 +271,49 @@ function Main() {
                                         <ul>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={statistics} />
+                                                    <img alt="" src={statistics} />
                                                 </div>
                                                 <p>Analizė ir tikslų nustatymas</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={prototype} />
+                                                    <img alt="" src={prototype} />
                                                 </div>
                                                 <p>Svetainės prototipo sudarymas</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={paintPalette} />
+                                                    <img alt="" src={paintPalette} />
                                                 </div>
                                                 <p>Svetainės dizainas</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={wordpress} />
+                                                    <img alt="" src={wordpress} />
                                                 </div>
                                                 <p>Turinio valdymo sistemos diegimas</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={upload} />
+                                                    <img alt="" src={upload} />
                                                 </div>
                                                 <p>Turinio sukėlimas į svetainę</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={database} />
+                                                    <img alt="" src={database} />
                                                 </div>
                                                 <p>Svetainės failų patalpinimas į serverį</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={statisticsSvg} />
+                                                    <img alt="" src={statisticsSvg} />
                                                 </div>
                                                 <p>SEO optimizavimas paieškos sistemoms</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={research} />
+                                                    <img alt="" src={research} />
                                                 </div>
                                                 <p>Svetainės priežiūra ir administravimas</p>
                                             </li>
@@ -327,26 +322,26 @@ function Main() {
                                         <ul>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={contact} />
+                                                    <img alt="" src={contact} />
                                                 </div>
                                                 <p>Įdiegta kontaktų forma.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={slider} />
+                                                    <img alt="" src={slider} />
                                                 </div>
                                                 <p>Svetainėje suprogramuoti du slaiderių komponentai.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={google_analytics} />
+                                                    <img alt="" src={google_analytics} />
                                                 </div>
                                                 <p>įdiegtas google analytics modulis leidžiantis stebėti vartotojų srautą ir daryti 
                                                 jų veiklos svetainėje analizę.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={picture} />
+                                                    <img alt="" src={picture} />
                                                 </div>
                                                 <p>
                                                     Įdiegtas atliktų darbų nuotraukų galerijos modulis.
@@ -354,7 +349,7 @@ function Main() {
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={google_maps} />
+                                                    <img alt="" src={google_maps} />
                                                 </div>
                                                 <p>
                                                     Įdiegtas interaktyvus google maps žemėlapis.
@@ -370,20 +365,20 @@ function Main() {
                         <h2 class="project__title">ALTITUDE.LT</h2>
                         <p class="project__description">Statybos darbų svetainė</p>
                         <div class="content">
-                            <a href="https://altitude.lt" target="_blank" class="content__image">
+                            <a href="https://altitude.lt" target="_blank" rel="noreferrer" class="content__image">
                                 <div class="background">
                                 </div>
                                 <div class="text">
-                                    <img src={search} height="26px"/>
+                                    <img alt="" src={search} height="26px"/>
                                     NARŠYTI GYVAI
                                 </div>
-                                <img src={altitude_website} />
+                                <img alt="" src={altitude_website} />
                             </a>
                             <div class="content__completed">
                                 <div class="box">
                                     <div class="box__top">
                                         <div class="box__top__icon">
-                                            <img src={completed} />
+                                            <img alt="" src={completed} />
                                         </div>
                                         <div class="box__top__title">
                                             ATLIKTI DARBAI
@@ -393,49 +388,49 @@ function Main() {
                                         <ul>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={statistics} />
+                                                    <img alt=""  src={statistics} />
                                                 </div>
                                                 <p>Analizė ir tikslų nustatymas</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={prototype} />
+                                                    <img alt="" src={prototype} />
                                                 </div>
                                                 <p>Svetainės prototipo sudarymas</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={paintPalette} />
+                                                    <img alt="" src={paintPalette} />
                                                 </div>
                                                 <p>Svetainės dizainas</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={wordpress} />
+                                                    <img alt="" src={wordpress} />
                                                 </div>
                                                 <p>Turinio valdymo sistemos diegimas</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={upload} />
+                                                    <img alt=""src={upload} />
                                                 </div>
                                                 <p>Turinio sukėlimas į svetainę</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={database} />
+                                                    <img alt="" src={database} />
                                                 </div>
                                                 <p>Svetainės failų patalpinimas į serverį</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={statisticsSvg} />
+                                                    <img alt="" src={statisticsSvg} />
                                                 </div>
                                                 <p>SEO optimizavimas paieškos sistemoms</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={research} />
+                                                    <img alt="" src={research} />
                                                 </div>
                                                 <p>Svetainės priežiūra ir administravimas</p>
                                             </li>
@@ -444,26 +439,26 @@ function Main() {
                                         <ul>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={contact} />
+                                                    <img alt="" src={contact} />
                                                 </div>
                                                 <p>Įdiegta kontaktų forma.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={slider} />
+                                                    <img alt="" src={slider} />
                                                 </div>
                                                 <p>Svetainėje suprogramuoti du slaiderių komponentai.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={google_analytics} />
+                                                    <img alt="" src={google_analytics} />
                                                 </div>
                                                 <p>įdiegtas google analytics modulis leidžiantis stebėti vartotojų srautą ir daryti 
                                                 jų veiklos svetainėje analizę.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={picture} />
+                                                    <img alt="" src={picture} />
                                                 </div>
                                                 <p>
                                                     Įdiegtas atliktų darbų nuotraukų galerijos modulis.
@@ -471,7 +466,7 @@ function Main() {
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={google_maps} />
+                                                    <img alt="" src={google_maps} />
                                                 </div>
                                                 <p>
                                                     Įdiegtas interaktyvus google maps žemėlapis.
@@ -487,20 +482,20 @@ function Main() {
                         <h2 class="project__title">ECOTRIP.LT</h2>
                         <p class="project__description">Krovinių gabenimo svetainė</p>
                         <div class="content">
-                            <a href="https://ecotrip.lt" target="_blank" class="content__image">
+                            <a href="https://ecotrip.lt" target="_blank" rel="noreferrer" class="content__image">
                                 <div class="background">
                                 </div>
                                 <div class="text">
-                                    <img src={search} height="26px"/>
+                                    <img alt="" src={search} height="26px"/>
                                     NARŠYTI GYVAI
                                 </div>
-                                <img src={ecotrip_website} />
+                                <img alt="" src={ecotrip_website} />
                             </a>
                             <div class="content__completed">
                                 <div class="box">
                                     <div class="box__top">
                                         <div class="box__top__icon">
-                                            <img src={completed} />
+                                            <img alt="" src={completed} />
                                         </div>
                                         <div class="box__top__title">
                                             ATLIKTI DARBAI
@@ -510,43 +505,43 @@ function Main() {
                                         <ul>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={statistics} />
+                                                    <img alt="" src={statistics} />
                                                 </div>
                                                 <p>Analizė ir tikslų nustatymas</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={prototype} />
+                                                    <img alt="" src={prototype} />
                                                 </div>
                                                 <p>Svetainės prototipo sudarymas</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={wordpress} />
+                                                    <img alt="" src={wordpress} />
                                                 </div>
                                                 <p>Turinio valdymo sistemos diegimas</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={upload} />
+                                                    <img alt="" src={upload} />
                                                 </div>
                                                 <p>Turinio sukėlimas į svetainę</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={database} />
+                                                    <img alt="" src={database} />
                                                 </div>
                                                 <p>Svetainės failų patalpinimas į serverį</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={statisticsSvg} />
+                                                    <img alt="" src={statisticsSvg} />
                                                 </div>
                                                 <p>SEO optimizavimas paieškos sistemoms</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={research} />
+                                                    <img alt="" src={research} />
                                                 </div>
                                                 <p>Svetainės priežiūra ir administravimas</p>
                                             </li>
@@ -555,49 +550,49 @@ function Main() {
                                         <ul>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={languages} />
+                                                    <img alt="" src={languages} />
                                                 </div>
                                                 <p>Įdiegtas daugiakalbystės modulis.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={schedule} />
+                                                    <img alt="" src={schedule} />
                                                 </div>
                                                 <p>Įdiegtas interaktyvus tvarkarštis.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={facebook} />
+                                                    <img alt="" src={facebook} />
                                                 </div>
                                                 <p>Integruoti socialiniai tinklai.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={messenger} />
+                                                    <img alt="" src={messenger} />
                                                 </div>
                                                 <p>Įdiegtas messenger tiesioginių pokalbių modulis.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={contact} />
+                                                    <img alt="" src={contact} />
                                                 </div>
                                                 <p>Įdiegta kontaktų forma.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={slider} />
+                                                    <img alt="" src={slider} />
                                                 </div>
                                                 <p>Svetainėje suprogramuoti du slaiderių komponentai.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={google_analytics} />
+                                                    <img alt="" src={google_analytics} />
                                                 </div>
                                                 <p>įdiegtas google analytics modulis.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={picture} />
+                                                    <img alt="" src={picture} />
                                                 </div>
                                                 <p>
                                                     Įdiegtas atliktų darbų nuotraukų galerijos modulis.
@@ -605,7 +600,7 @@ function Main() {
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={google_maps} />
+                                                    <img alt="" src={google_maps} />
                                                 </div>
                                                 <p>
                                                     Įdiegtas interaktyvus google maps žemėlapis.
@@ -621,20 +616,20 @@ function Main() {
                         <h2 class="project__title">SODYBA-SNIURAI.LT</h2>
                         <p class="project__description">Kaimo turizmo sodybos svetainė</p>
                         <div class="content">
-                            <a href="http://sodyba-sniurai.lt" target="_blank" class="content__image">
+                            <a href="http://sodyba-sniurai.lt" target="_blank" rel="noreferrer" class="content__image">
                                 <div class="background">
                                 </div>
                                 <div class="text">
-                                    <img src={search} height="26px"/>
+                                    <img alt="" src={search} height="26px"/>
                                     NARŠYTI GYVAI
                                 </div>
-                                <img src={sniurai_website} />
+                                <img alt="" src={sniurai_website} />
                             </a>
                             <div class="content__completed">
                                 <div class="box">
                                     <div class="box__top">
                                         <div class="box__top__icon">
-                                            <img src={completed} />
+                                            <img alt="" src={completed} />
                                         </div>
                                         <div class="box__top__title">
                                             ATLIKTI DARBAI
@@ -644,49 +639,49 @@ function Main() {
                                         <ul>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={statistics} />
+                                                    <img alt="" src={statistics} />
                                                 </div>
                                                 <p>Analizė ir tikslų nustatymas</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={prototype} />
+                                                    <img alt="" src={prototype} />
                                                 </div>
                                                 <p>Svetainės prototipo sudarymas</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={paintPalette} />
+                                                    <img alt="" src={paintPalette} />
                                                 </div>
                                                 <p>Svetainės dizainas</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={wordpress} />
+                                                    <img alt="" src={wordpress} />
                                                 </div>
                                                 <p>Turinio valdymo sistemos diegimas</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={upload} />
+                                                    <img alt="" src={upload} />
                                                 </div>
                                                 <p>Turinio sukėlimas į svetainę</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={database} />
+                                                    <img alt="" src={database} />
                                                 </div>
                                                 <p>Svetainės failų patalpinimas į serverį</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={statisticsSvg} />
+                                                    <img alt="" src={statisticsSvg} />
                                                 </div>
                                                 <p>SEO optimizavimas paieškos sistemoms</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={research} />
+                                                    <img alt="" src={research} />
                                                 </div>
                                                 <p>Svetainės priežiūra ir administravimas</p>
                                             </li>
@@ -695,25 +690,25 @@ function Main() {
                                         <ul>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={languages} />
+                                                    <img alt="" src={languages} />
                                                 </div>
                                                 <p>Įdiegtas daugiakalbystės modulis.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={contact} />
+                                                    <img alt="" src={contact} />
                                                 </div>
                                                 <p>Įdiegta kontaktų forma.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={google_analytics} />
+                                                    <img alt="" src={google_analytics} />
                                                 </div>
                                                 <p>įdiegtas google analytics modulis.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={picture} />
+                                                    <img alt="" src={picture} />
                                                 </div>
                                                 <p>
                                                     Įdiegtas nuotraukų galerijos modulis.
@@ -721,7 +716,7 @@ function Main() {
                                             </li>
                                             <li>
                                                 <div class="icon">
-                                                    <img src={google_maps} />
+                                                    <img alt="" src={google_maps} />
                                                 </div>
                                                 <p>
                                                     Įdiegtas interaktyvus google maps žemėlapis.
@@ -743,7 +738,7 @@ function Main() {
                         <div class="box">
                             <div class="box__top">
                                 <div class="icon">
-                                    <img src={statistics} />
+                                    <img alt="" src={statistics} />
                                 </div>
                                 <div class="title">
                                     ANALIZĖ IR TIKSLŲ NUSTATYMAS
@@ -758,7 +753,7 @@ function Main() {
                         <div class="box">
                             <div class="box__top">
                                 <div class="icon">
-                                    <img src={prototype} />
+                                    <img alt="" src={prototype} />
                                 </div>
                                 <div class="title">
                                     PROTOTIPO SUDARYMAS
@@ -773,7 +768,7 @@ function Main() {
                         <div class="box">
                             <div class="box__top">
                                 <div class="icon">
-                                    <img src={paintPalette} />
+                                    <img alt="" src={paintPalette} />
                                 </div>
                                 <div class="title">
                                     DIZAINAS
@@ -788,7 +783,7 @@ function Main() {
                         <div class="box">
                             <div class="box__top">
                                 <div class="icon">
-                                    <img src={wordpress} />
+                                    <img alt="" src={wordpress} />
                                 </div>
                                 <div class="title">
                                     TVS DIEGIMAS
@@ -803,7 +798,7 @@ function Main() {
                         <div class="box">
                             <div class="box__top">
                                 <div class="icon">
-                                    <img src={upload} />
+                                    <img alt="" src={upload} />
                                 </div>
                                 <div class="title">
                                     TURINIO SUKĖLIMAS
@@ -818,7 +813,7 @@ function Main() {
                         <div class="box">
                             <div class="box__top">
                                 <div class="icon">
-                                    <img src={database} />
+                                    <img alt="" src={database} />
                                 </div>
                                 <div class="title">
                                     TALPINIMAS Į SERVERĮ
@@ -833,7 +828,7 @@ function Main() {
                         <div class="box">
                             <div class="box__top">
                                 <div class="icon">
-                                    <img src={statisticsSvg} />
+                                    <img alt="" src={statisticsSvg} />
                                 </div>
                                 <div class="title">
                                     SEO OPTIMIZACIJA
@@ -848,7 +843,7 @@ function Main() {
                         <div class="box">
                             <div class="box__top">
                                 <div class="icon">
-                                    <img src={research} />
+                                    <img alt="" src={research} />
                                 </div>
                                 <div class="title">
                                     PRIEŽIŪRA IR ADMINISTRAVIMAS
@@ -868,7 +863,7 @@ function Main() {
                 {/* <form>
                     <div class="info-box">
                         <div class="info-box__item">
-                            <img src={phone} width="20px" />
+                            <img alt="" src={phone} width="20px" />
                             <div class="text">
                                 <p>
                                     <strong>TELEFONO NUMERIS</strong><br />
@@ -877,7 +872,7 @@ function Main() {
                             </div>
                         </div>
                         <div class="info-box__item">
-                            <img src={letter} width="20px" />
+                            <img alt="" src={letter} width="20px" />
                             <div class="text">
                                 <p>
                                     <strong>EL. PAŠTO ADRESAS</strong><br />

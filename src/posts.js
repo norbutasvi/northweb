@@ -25,7 +25,7 @@ function getPostsData() {
         likes: 2,
         comments: 0,
         shares: 0,
-        smile: <img src={like} height="16px"/>
+        smile: <img alt="" src={like} height="16px"/>
         },
         {
             profile: {
@@ -74,7 +74,7 @@ function getPostsData() {
             likes: 2,
             comments: 0,
             shares: 0,
-            smile: <img src={like} height="20px"/>
+            smile: <img alt="" src={like} height="20px"/>
         }
     ]
 }

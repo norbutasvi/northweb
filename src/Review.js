@@ -23,17 +23,17 @@ function Review({ post }) {
                 <div class="profile">
                     <div class="profile__photo">
                         <a href="https://www.facebook.com/audenis.lt">
-                            <img src={post.profile.photo} />
+                            <img alt="" src={post.profile.photo} />
                         </a>
                     </div>
                     <div class="profile__info">
-                        <p class="title"><a class="inline-link" target="_blank" href={post.profile.url}>{post.profile.name}</a>
-                        <a href={post.profile.url} target="_blank" class="showProfile">
+                        <p class="title"><a class="inline-link" rel="noreferrer" target="_blank" href={post.profile.url}>{post.profile.name}</a>
+                        <a href={post.profile.url} target="_blank" rel="noreferrer" class="showProfile">
                             <div class="showProfile__cover" style={{'backgroundImage': `linear-gradient(to bottom, rgba(0,0,0,0),  rgba(0,0,0,0.6)), url('${post.profile.cover}')`, 'backgroundSize':'cover', 'backgroundPosition': 'center center'}}>
                             </div>
                             <div class="showProfile__photo">
                                 <div class="image">
-                                    <img src={post.profile.photo} />
+                                    <img alt="" src={post.profile.photo} />
                                 </div>
                                 <div class="info">
                                     <div class="title"><strong>{post.profile.name}</strong></div>
@@ -52,9 +52,9 @@ function Review({ post }) {
                 <div class="buttons">
                     <div class="buttons__item" onClick={() => handleOnClick()}>
                         {like.isLiked ? 
-                            <img src={like_blue} />
+                            <img alt="" src={like_blue} />
                             :
-                            <img src={like_icon} />
+                            <img alt="" src={like_icon} />
                         }
 
                         {like.isLiked ? 
@@ -64,11 +64,11 @@ function Review({ post }) {
                         }
                     </div>
                     <div class="buttons__item">
-                        <img src={comment} />
+                        <img alt="" src={comment} />
                         <p>{post.comments}</p>
                     </div>
                     <div class="buttons__item">
-                        <img src={share} />
+                        <img alt="" src={share} />
                         <p>{post.shares}</p>
                     </div>
                 </div>
