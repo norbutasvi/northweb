@@ -1,7 +1,7 @@
 import './style.css';
 import menu from './images/menu.svg';
 import close from './images/close-button.svg';
-
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 import Aside from './Aside';
 import Main from './Main';
 
@@ -40,6 +40,10 @@ function App() {
       </div>
       <Aside />
       <Main />
+      <MessengerCustomerChat
+        pageId="100819872017471"
+        appId="269807374543748"
+      />
     </div>
   );
 }

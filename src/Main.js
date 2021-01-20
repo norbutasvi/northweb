@@ -79,7 +79,7 @@ function Main() {
                     <img alt="" src={euro} width="64px"/>
                     <p>
                     6 metų patirtis leis Jums pasiūlyti gerą kainos ir kokybės
-                    santykį. Kiekvieno projekto kaina pas mus - <span>80 eurų</span>. 
+                    santykį. Kiekvieno projekto kaina pas mus - <span> nuo 80 eurų</span>. 
                     Mokate tik tada, jeigu atliktas darbas Jus tenkina.
                     </p>
                 </div>

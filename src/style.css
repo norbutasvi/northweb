@@ -532,6 +532,13 @@ aside nav ul li .title {
   }
 }
 
+@media only screen and (max-width: 1040px) {
+  .main__container .section__testimonials .container .content .item img {
+    width: 120px;
+    margin: 30px;
+  }
+}
+
 .main__container .section__testimonials .container .content .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -569,6 +576,13 @@ aside nav ul li .title {
 @media only screen and (max-width: 600px) {
   .main__container .section__testimonials .container .content .fb-feed {
     height: 500px;
+    width: 90%;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .main__container .section__testimonials .container .content .fb-feed {
     width: 90%;
   }
 }
@@ -823,6 +837,12 @@ aside nav ul li .title {
   width: 100%;
   z-index: 1;
   max-width: 550px;
+}
+
+@media only screen and (max-width: 1040px) {
+  .main__container .section__portfolio .project .content__image img {
+    max-width: 100%;
+  }
 }
 
 .main__container .section__portfolio .project .content__image .background {

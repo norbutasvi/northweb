@@ -425,6 +425,11 @@ aside {
                                     width: 100px;
                                     margin: 30px;
                                 }
+
+                                @include tablet {
+                                    width: 120px;
+                                    margin: 30px;
+                                }
                             }
                         }
 
@@ -453,6 +458,11 @@ aside {
 
                             @include phone {
                                 height: 500px;
+                                width: 90%;
+                                margin-top: 50px;
+                            }
+
+                            @include tablet {
                                 width: 90%;
                             }
 
@@ -665,6 +675,10 @@ aside {
                                 width: 100%;
                                 z-index: 1;
                                 max-width: 550px;
+
+                                @include tablet {
+                                    max-width: 100%;
+                                }
                             }
 
                             .background {
