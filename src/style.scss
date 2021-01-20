@@ -134,7 +134,7 @@ aside {
     flex-direction: column;
     justify-content: center;
     font-weight: 300;
-    border-right: 1px solid $lightestBlue;
+    // border-right: 1px solid $lightestBlue;
     z-index: 4;
     transition: 0.3s ease;
 
@@ -237,11 +237,6 @@ aside {
                     text-align: center;
                     padding: 20px;
 
-                    @include phone {
-                        width: 100%;
-                        border: none;
-                    }
-
                     &:first-child {
                         padding-left: 0;
                     }
@@ -254,6 +249,12 @@ aside {
                     span {
                         font-weight: 600;
                         color: $lightestBlue;
+                    }
+
+                    @include phone {
+                        width: 100%;
+                        border: none;
+                        padding: 0px;
                     }
                 }
             }
@@ -312,7 +313,13 @@ aside {
                             transition: 0.3s ease;
 
                             @include tablet {
-                                font-size: 18px;
+                                font-size: 20px;
+                                padding: 15px;
+                            }
+
+                            @include phone {
+                                font-size: 20px;
+                                padding: 15px;
                             }
 
                             &:hover {
@@ -330,11 +337,14 @@ aside {
                             transition: 0.3s ease;
 
                             @include tablet {
-                                font-size: 18px;
+                                font-size: 20px;
+                                padding: 15px;
                             }
 
                             @include phone {
                                 margin: 0;
+                                font-size: 20px;
+                                padding: 15px;
                             }
 
                             &:hover {
@@ -369,6 +379,10 @@ aside {
                     width: 100%;
                     display: flex;
 
+                    @include phone {
+                        flex-direction: column;
+                    }
+
                     .centered {
                         text-align: center;
                     }
@@ -392,6 +406,9 @@ aside {
                     .content {
                         width: 50%;
                         
+                        @include phone {
+                            width: 100%;
+                        }
 
                         .item {
                             width: 50%;
@@ -399,9 +416,14 @@ aside {
                             justify-content: center;
                             align-items: center;
 
+                            @include phone {
+                                
+                            }
+
                             img {
                                 @include phone {
                                     width: 100px;
+                                    margin: 30px;
                                 }
                             }
                         }
@@ -431,6 +453,7 @@ aside {
 
                             @include phone {
                                 height: 500px;
+                                width: 90%;
                             }
 
                             .cover {
