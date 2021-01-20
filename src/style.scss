@@ -1,0 +1,920 @@
+@mixin logo-separator {
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to right, #0C729E, #013553);
+}
+
+@mixin tablet {
+    @media only screen and (max-width: 1040px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media only screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+$darkBlue: #042939;
+$lighterBlue: #03405A;
+$lightestBlue: #0C729E;
+$iconsBg: #07364A;
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.App {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+
+    @include tablet {
+        width: 90%;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.nav-button {
+    display: none;
+    position: fixed;
+    margin: 15px;
+    cursor: pointer;
+    z-index: 4;
+
+    @include phone {
+        display: block;
+    }
+
+    @include tablet {
+        display: block;
+    }
+}
+
+.active {
+    width: 100px;
+    transition: 0.3s ease;
+}
+
+.active-btn {
+    transform: translateX(100px);
+    transition: 0.3s ease;
+}
+
+.msg-success {
+    display: none;
+    width: 400px;
+    position: fixed;
+    left: 50%;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background: $lighterBlue;
+    text-align: center;
+    border: 5px solid white;
+
+    p {
+        padding: 0px 50px;
+    }
+
+    .close-msg {
+        padding: 10px;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+    }
+}
+
+aside {
+    width: 100px;
+    height: 100vh;
+    position: fixed;
+    background: $darkBlue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 300;
+    border-right: 1px solid $lightestBlue;
+    z-index: 4;
+    transition: 0.3s ease;
+
+    @include tablet {
+        width: 0px;
+        overflow: hidden;
+    }
+
+    .logo {
+        position: absolute;
+        bottom: 0;
+        padding: 5px;
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    nav {
+        width: 100%;
+
+        ul {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            a {
+                width: 100%;
+            }
+
+            li {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-decoration: none;
+                padding: 20px 10px;
+                cursor: pointer;
+                transition: 0.3s ease;
+
+                &:hover {
+                    background: $lightestBlue;
+                }
+
+                .menu-icon {
+                    width: 35px;
+                }
+
+                .title {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+.main {
+    &__container {
+        background: linear-gradient(to right, $lighterBlue, $darkBlue);
+        margin-left: 100px;
+
+        @include tablet {
+            margin-left: 0px;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0px;
+        }
+
+        .section {
+
+            &__col-2 {
+                width: 100%;
+
+                .logo-separator {
+                    @include logo-separator();
+                }
+            }
+
+            &__col-3 {
+                width: 80%;
+                margin: 0 auto;
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-between;
+
+                @include tablet {
+                    width: 90%;
+                }
+
+                @include phone {
+                    flex-direction: column;
+                }
+
+                .item {
+                    width: 33.3%;
+                    border-right: 1px solid $lightestBlue;
+                    text-align: center;
+                    padding: 20px;
+
+                    @include phone {
+                        width: 100%;
+                        border: none;
+                    }
+
+                    &:first-child {
+                        padding-left: 0;
+                    }
+
+                    &:last-child {
+                        border: none;
+                        padding-right: 0;
+                    }
+
+                    span {
+                        font-weight: 600;
+                        color: $lightestBlue;
+                    }
+                }
+            }
+
+            &__wrapper {
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                margin-top: -35px;
+
+                @include tablet {
+                    width: 90%;
+                }
+
+                @include phone {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                }
+
+                .left {
+                    width: 50%;
+                    padding-right: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    @include phone {
+                        width: 100%;
+                        padding: 0;
+                    }
+
+                    p {
+                        align-self: center;
+                        font-size: 22px;
+
+                        @include tablet {
+                            font-size: 18px;
+                        }
+                    }
+
+                    .buttons {
+                        display: flex;
+
+                        @include phone {
+                            justify-content: center;
+                        }
+
+                        .btn-primary {
+                            border: 1px solid transparent;
+                            box-sizing: border-box;
+                            font-size: 22px;
+                            background: #0C709B;
+                            padding: 10px;
+                            cursor: pointer;
+                            transition: 0.3s ease;
+
+                            @include tablet {
+                                font-size: 18px;
+                            }
+
+                            &:hover {
+                                background: transparent;
+                                border: 1px solid #0C709B;
+                            }
+                        }
+
+                        .btn-secondary {
+                            padding: 10px;
+                            font-size: 22px;
+                            border: 1px solid #0C709B;
+                            margin-left: 30px;
+                            cursor: pointer;
+                            transition: 0.3s ease;
+
+                            @include tablet {
+                                font-size: 18px;
+                            }
+
+                            @include phone {
+                                margin: 0;
+                            }
+
+                            &:hover {
+                                background: #0C709B;
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    width: 50%;
+
+                    @include phone {
+                        width: 100%;
+                    }
+
+                    .hero-image {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &__testimonials {
+
+                margin-bottom: 50px;
+                .logo-separator {
+                    @include logo-separator();
+                }
+
+                .container {
+                    width: 100%;
+                    display: flex;
+
+                    .centered {
+                        text-align: center;
+                    }
+
+                    .flex-center {
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .flex-col {
+                        min-height: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+
+                        @include phone {
+                            justify-content: space-around;
+                        }
+                    }
+
+                    .content {
+                        width: 50%;
+                        
+
+                        .item {
+                            width: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img {
+                                @include phone {
+                                    width: 100px;
+                                }
+                            }
+                        }
+
+                        .flex {
+                            display: flex;
+                            justify-content: center;
+
+                            @include phone {
+                                flex-direction: column;
+                                justify-content: space-between;
+                            }
+                        }
+
+                        .icon {
+                            margin-right: 5px;
+                            // filter: grayscale(100%);
+                            height: 100px;
+                        }
+
+                        .fb-feed {
+                            width: 400px;
+                            font-size: 90%;
+                            font-family: 'Roboto', sans-serif;
+                            height: 700px;
+                            overflow: auto;
+
+                            @include phone {
+                                height: 500px;
+                            }
+
+                            .cover {
+                                position: relative;
+                                text-align: center;
+                                background: black;
+                                padding: 50px;
+
+                                img {
+                                    width: 50%;
+                                    z-index: 100;
+
+                                    @include phone {
+                                        width: 100%;
+                                    }
+                                }
+
+                                .absolute {
+                                    width: 50px;
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                    padding: 10px;
+                                }
+                            }
+
+                            .testimonials {
+                                .review {
+                                    color: black;
+                                    background: #FFFFFF;
+                                    padding: 10px;
+                                    border-top: 1px solid #AAAAAA;
+
+                                    .profile {
+                                        width: 100%;
+                                        display: flex;
+                                        align-items: center;
+
+                                        &__photo {
+                                            width: 25%;
+                                            
+                                            
+                                            a {
+                                                width: 100%;
+
+                                                img {
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+
+                                        p {
+                                            margin: 0;
+                                        }
+
+                                        &__info {
+                                            margin-left: 10px;
+                                            width: 75%;
+
+                                            .title {
+                                                font-weight: 900;
+                                                position: relative;
+
+                                                a {
+                                                    color: black;
+                                                }
+
+                                                .inline-link {
+                                                    display: inline-block;
+                                                }
+
+                                                &:hover > .showProfile {
+                                                    display: block;
+                                                }
+                                            }
+
+                                            .date {
+                                                color: #AAAAAA;
+                                            }
+
+                                            .showProfile {
+                                                width: 320px;
+                                                display: none;
+                                                position: absolute;
+                                                font-weight: 400;
+                                                z-index: 3;
+                                                bottom: 17px;
+                                                background: #FFFFFF;
+                                                left: -78px;
+                                                border: 1px solid grey;
+
+                                                &__cover {
+                                                    height: 120px;
+                                                    // background: linear-gradient(to bottom, rgba(0,0,0,0),  rgba(0,0,0,1));
+                                                }
+
+                                                &__photo {
+                                                    display: flex;
+                                                    margin-top: -40px;
+                                                    
+                                                    .image {
+                                                        height: 80px;
+
+                                                        img {
+                                                            height: 100%;
+                                                        }
+                                                    }
+
+                                                    .info {
+                                                        min-height: 100%;
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        justify-content: space-evenly;
+                                                        margin-left: 10px;
+
+                                                        .title {
+                                                            color: #FFFFFF;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .comment {
+                                        padding-top: 10px;
+                                    }
+
+                                    .buttons {
+                                        display: flex;
+
+                                        &__item {
+                                            display: flex;
+                                            align-items: center;
+                                            margin-right: 20px;
+                                            color: #AAAAAA;
+                                            cursor: pointer;
+
+                                            img {
+                                                height: 16px;
+                                                margin-right: 5px;
+                                                fill: black;
+                                            }
+
+                                            p {
+                                                font-weight: 700;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__portfolio {
+                .logo-separator {
+                    @include logo-separator();
+                }
+
+                .project {
+                    margin-top: 50px;
+    
+                    &__title, &__description {
+                        margin: 0;
+                        line-height: 1;
+                    }
+
+                    .content {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 20px;
+
+                        @include phone {
+                            align-items: center;
+                        }
+
+                        @include tablet {
+                            flex-direction: column;
+                        }
+
+                        &__image {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: relative;
+                            width: 48%;
+
+                            @include phone {
+                                width: 100%;
+                            }
+
+                            @include tablet {
+                                width: 100%;
+                            }
+
+                            &:hover > .background {
+                                opacity: 0.6;
+                                transition: 0.3s ease;
+                            }
+
+                            &:hover > .text {
+                                opacity: 1;
+                                // transform: translateX(0);
+                            }
+    
+                            img {
+                                width: 100%;
+                                z-index: 1;
+                            }
+
+                            .background {
+                                opacity: 0;
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                background: black;
+                                z-index: 2;
+                                cursor: pointer;
+                            }
+
+                            .text {
+                                opacity: 0;
+                                padding: 10px;
+                                position: absolute;
+                                font-size: 26px;
+                                font-weight: 500;
+                                z-index: 3;
+                                text-align: center;
+                                margin: 0;
+                                cursor: pointer;
+                            }
+                        }
+
+                        &__completed {
+                            width: 48%;
+
+                            @include phone {
+                                width: 100%;
+                                margin-top: 20px;
+                            }
+
+                            @include tablet {
+                                width: 100%;
+                                margin-top: 20px;
+                            }
+
+                            .box {
+                                min-height: 100%;
+                                border: 1px solid $lightestBlue;
+
+                                &__top {
+                                    background: linear-gradient(to right, #0C729E, #013553);
+                                    display: flex;
+                                    align-items: center;
+
+                                    &__icon {
+                                        background: $iconsBg;
+                                        border-bottom: 1px solid $lightestBlue;
+
+                                        img {
+                                            height: 50px;
+                                        }
+                                    }
+
+                                    &__title {
+                                        margin-left: 10px;
+                                        font-size: 20px;
+                                        font-weight: 500;
+                                    }
+                                }
+
+                                &__content {
+
+                                    ul {
+                                        padding: 10px;
+                                        
+                                        li {
+                                            display: flex;
+                                            align-items: center;
+                                            margin-bottom: 5px;
+
+                                            .icon {
+                                                padding: 5px;
+                                                background: transparent;
+
+                                                img {
+                                                    height: 20px;
+                                                }
+                                            }
+
+                                            p {
+                                                margin: 0;
+                                                margin-left: 5px;
+                                            }
+                                        }
+                                    }
+
+                                    .other-works {
+                                        padding: 5px;
+                                        background: linear-gradient(to right, #0C729E, #013553); 
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__process {
+                margin-top: 50px;
+
+                .logo-separator {
+                    @include logo-separator();
+                }
+
+                .row {
+                    display: flex;
+                    justify-content: flex-start;
+
+                    &:nth-child(2n) {
+                        justify-content: flex-end;
+                    }
+                }
+
+                .box {
+                    width: 45%;
+
+                    @include phone {
+                        width: 100%;
+                        margin-top: 50px;
+                    }
+                    
+                    &__top {
+                        display: flex;
+                        align-items: center;
+                        background: linear-gradient(to right, #0C729E, #013553);
+
+                        .icon {
+                            background: $iconsBg;
+                            padding: 10px;
+
+                            img {
+                                width: 30px;
+                            }
+                        }
+
+                        .title {
+                            margin-left: 10px;
+                            font-size: 20px;
+                            font-weight: 500;
+                        }
+                    }
+
+                    &__content {
+                        margin-left: 50px;
+                        padding: 10px;
+
+                        @include phone {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+
+            &__contact {
+                margin-top: 50px;
+
+                .logo-separator {
+                    @include logo-separator();
+                }
+
+                form {
+                    display: flex;
+                    justify-content: space-between;
+
+                    @include phone {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .info-box {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 33.33%;
+                        background: $darkBlue;
+                        padding: 20px;
+                        margin-right: 20px;
+
+                        @include phone {
+                            width: 100%;
+                            background: transparent;
+                            flex-direction: row;
+                            justify-content: space-between;
+                        }
+    
+                        &__item {
+                            display: flex;
+                            align-items: center;
+    
+                            .text {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+
+                    .form-block {
+                        width: 33.33%;
+
+                        @include phone {
+                            width: 100%;
+                        }
+
+                        .input-item {
+                            margin-top: 5px;
+
+                            input[type="text"] {
+                                width: 100%;
+                                padding: 10px;
+                                background: $lightestBlue;
+                                color: white;
+                                font-size: 20px;
+                                border: none;
+        
+                                @include phone {
+                                    margin-bottom: 10px;
+                                }
+
+                                &:focus {
+                                    outline: none;
+                                    background: rgb(36, 166, 241);
+                                }
+                            }
+
+                            textarea {
+                                width: 100%;
+                                background: $lightestBlue;
+                                border: none;
+                                color: white;
+                                font-size: 20px;
+                                padding: 10px;
+
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+                        }
+
+                        .submit-button input {
+                            width: 100%;
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: white;
+                            background: $darkBlue;
+                            border: 2px solid $lightestBlue;
+                            padding: 10px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .left {
+                        margin-right: 20px;
+
+                        @include phone {
+                            margin-right: 0px;
+                        }
+                    }
+
+                    .right {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+
+        .footer {
+            padding: 20px;
+            background: $darkBlue;
+            margin-top: 50px;
+            text-align: center;
+        }
+    }
+}
