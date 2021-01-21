@@ -135,7 +135,7 @@ function Form() {
                 <div class="submit-button">
                     <input type="submit" disabled={isSending} onClick={handleSubmit} value="SIŲSTI" />
                     {isSending && 
-                        <div style={{'text-align':'center'}}><span style={{'margin-right':'10px'}}>SIUNČIAMA</span><img src={loader} width="50px" /></div>
+                        <div style={{'text-align':'center'}}><span style={{'margin-right':'10px'}}>SIUNČIAMA</span><img alt="" src={loader} width="50px" /></div>
                     }
                 </div>
             </div>
