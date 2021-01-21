@@ -4,6 +4,10 @@ import close from './images/close-button.svg';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import Aside from './Aside';
 import Main from './Main';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('G-PMDV1CGMPD');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
 
@@ -26,8 +30,30 @@ function App() {
     e.target.parentNode.parentNode.style.display = 'none';
   }
 
+  const handleNavAppearance = (e) => {
+
+    const button = document.querySelector('#menu-button');
+    const icon = document.querySelector('.btn-icon');
+    const aside = document.querySelector('aside');
+
+    if (e.target.closest('aside')) {
+        return;
+    } else if (e.target.closest('.nav-button')) {
+        return;
+    } else {
+      if (aside.classList.contains('active')) {
+        aside.classList.toggle('active');
+        button.classList.toggle('active-btn');
+        icon.src = menu;
+      } else {
+        return;
+      }
+
+    }
+  }
+
   return (
-    <div className="App">
+    <div className="App" onClick={(e) => handleNavAppearance(e)}>
       <div class="msg-success">
         <div class="close-msg" onClick={handlePopup}>
           <img alt="" src={close} width="30px"/>
@@ -44,6 +70,7 @@ function App() {
         pageId="100819872017471"
         appId="269807374543748"
       />
+      
     </div>
   );
 }

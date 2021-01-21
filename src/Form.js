@@ -65,7 +65,7 @@ function Form() {
         e.target.style.background = 'grey';
         e.target.style.cursor = 'wait';
 
-        axios.post('https://northweb-server.herokuapp.com/api/forma', formData)
+        axios.post('http://localhost:5000/api/forma', formData)
         .then(res => {
             setIsSending(false);
             
