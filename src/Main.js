@@ -141,7 +141,7 @@ function Main() {
                         <h2 class="project__title">KALDA.LT</h2>
                         <p class="project__description">Statybos darbų svetainė</p>
                         <div class="content">
-                            <a href="http://kalda.lt" class="content__image" target="_blank" rel="noreferrer">
+                            <a href="http://kalda.lt" class="content__image">
                                 <div class="background">
                                 </div>
                                 <div class="text">
@@ -244,7 +244,7 @@ function Main() {
                         <h2 class="project__title">AUDENIS.LT</h2>
                         <p class="project__description">Kurortinio viešbučio svetainė</p>
                         <div class="content">
-                            <a href="http://audenis.lt" target="_blank" rel="noreferrer" class="content__image">
+                            <a href="http://audenis.lt" class="content__image">
                                 <div class="background">
                                 </div>
                                 <div class="text">
@@ -361,7 +361,7 @@ function Main() {
                         <h2 class="project__title">ALTITUDE.LT</h2>
                         <p class="project__description">Statybos darbų svetainė</p>
                         <div class="content">
-                            <a href="https://altitude.lt" target="_blank" rel="noreferrer" class="content__image">
+                            <a href="https://altitude.lt" class="content__image">
                                 <div class="background">
                                 </div>
                                 <div class="text">
@@ -478,7 +478,7 @@ function Main() {
                         <h2 class="project__title">ECOTRIP.LT</h2>
                         <p class="project__description">Krovinių gabenimo svetainė</p>
                         <div class="content">
-                            <a href="https://ecotrip.lt" target="_blank" rel="noreferrer" class="content__image">
+                            <a href="https://ecotrip.lt" class="content__image">
                                 <div class="background">
                                 </div>
                                 <div class="text">
@@ -612,7 +612,7 @@ function Main() {
                         <h2 class="project__title">SODYBA-SNIURAI.LT</h2>
                         <p class="project__description">Kaimo turizmo sodybos svetainė</p>
                         <div class="content">
-                            <a href="http://sodyba-sniurai.lt" target="_blank" rel="noreferrer" class="content__image">
+                            <a href="http://sodyba-sniurai.lt" class="content__image">
                                 <div class="background">
                                 </div>
                                 <div class="text">
