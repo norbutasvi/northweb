@@ -78,7 +78,7 @@ function Main() {
                 <div class="item">
                     <img alt="" src={euro} width="64px"/>
                     <p>
-                    6 metų patirtis leis Jums pasiūlyti gerą kainos ir kokybės
+                    Patirtis su įvairaus sudėtingumo projektais leis Jums pasiūlyti gerą kainos ir kokybės
                     santykį. Kiekvieno projekto kaina pas mus - <span> nuo 80 eurų</span>. 
                     Mokate tik tada, jeigu atliktas darbas Jus tenkina.
                     </p>
