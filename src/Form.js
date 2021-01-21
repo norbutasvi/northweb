@@ -106,7 +106,7 @@ function Form() {
                     <img alt="" src={letter} width="20px" />
                     <div class="text">
                         <p>
-                            <strong>EL. PAŠTO ADRESAS</strong><br />
+                            <strong>EL. PAŠTO<br /> ADRESAS</strong><br />
                             siaurespuslapiai@gmail.com
                         </p>
                     </div>
