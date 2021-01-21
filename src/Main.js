@@ -6,9 +6,7 @@ import Form from './Form';
 
 import {
     BrowserView,
-    MobileView,
-    isBrowser,
-    isMobile
+    MobileView
   } from "react-device-detect";
 
 // IMAGES
@@ -52,8 +50,6 @@ import languages from './images/languages.png';
 function Main() {
 
     const posts = getPostsData();
-
-    const documentWidth = window.innerWidth;
 
     return (
         <div class="main__container">
