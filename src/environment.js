@@ -4,7 +4,7 @@ export function getBaseUrl() {
     if (process.env.NODE_ENV === 'development') {
         BASE_URL = 'http://localhost:5000';
     } else {
-        BASE_URL = 'https://northweb-server.herokuapp.com/';
+        BASE_URL = 'https://northweb-server.herokuapp.com';
     }
 
     return BASE_URL;
