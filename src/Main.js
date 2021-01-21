@@ -4,6 +4,12 @@ import Review from './Review';
 import getPostsData from './posts';
 import Form from './Form';
 
+import {
+    BrowserView,
+    MobileView,
+    isBrowser,
+    isMobile
+  } from "react-device-detect";
 
 // IMAGES
 import logo from './images/logo.png';
@@ -46,6 +52,8 @@ import languages from './images/languages.png';
 function Main() {
 
     const posts = getPostsData();
+
+    const documentWidth = window.innerWidth;
 
     return (
         <div class="main__container">
@@ -142,6 +150,7 @@ function Main() {
                         <h2 class="project__title">KALDA.LT</h2>
                         <p class="project__description">Statybos darbų svetainė</p>
                         <div class="content">
+                            <BrowserView>
                             <a href="http://kalda.lt" class="content__image" target="_blank" rel="noreferrer">
                                 <div class="background">
                                 </div>
@@ -151,6 +160,18 @@ function Main() {
                                 </div>
                                 <img alt="" src={kalda_website} />
                             </a>
+                            </BrowserView>
+                            <MobileView>
+                            <a href="http://kalda.lt" class="content__image">
+                                <div class="background">
+                                </div>
+                                <div class="text">
+                                    <img alt="" src={search} height="26px"/>
+                                    NARŠYTI GYVAI
+                                </div>
+                                <img alt="" src={kalda_website} />
+                            </a>
+                            </MobileView>
                             <div class="content__completed">
                                 <div class="box">
                                     <div class="box__top">

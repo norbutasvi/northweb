@@ -864,16 +864,26 @@ aside {
                         @include phone {
                             width: 100%;
                             background: transparent;
-                            flex-direction: row;
+                            flex-direction: column;
                             justify-content: space-between;
+                            margin-right: 0px;
                         }
     
                         &__item {
                             display: flex;
                             align-items: center;
+                            text-align: center;
+
+                            @include phone {
+                                flex-direction: column;
+                            }
     
                             .text {
                                 margin-left: 10px;
+
+                                @include phone {
+                                    margin: 0;
+                                }
                             }
                         }
                     }

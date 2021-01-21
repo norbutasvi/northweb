@@ -93,20 +93,22 @@ function Form() {
     return (
         <form>
             <div class="info-box">
-                <div class="info-box__item">
-                    <img alt="" src={phone} width="20px" />
-                    <div class="text">
-                        <p>
-                            <strong>TELEFONO NUMERIS</strong><br />
-                            +37063631839
-                        </p>
+                <a href="tel:+37063631839">
+                    <div class="info-box__item">
+                        <img alt="" src={phone} width="20px" />
+                        <div class="text">
+                            <p>
+                                <strong>TEL. NUMERIS</strong><br />
+                                +37063631839
+                            </p>
+                        </div>
                     </div>
-                </div>
+                </a>
                 <div class="info-box__item">
                     <img alt="" src={letter} width="20px" />
                     <div class="text">
                         <p>
-                            <strong>EL. PAŠTO<br /> ADRESAS</strong><br />
+                            <strong>EL. PAŠTO ADRESAS</strong><br />
                             siaurespuslapiai@gmail.com
                         </p>
                     </div>
