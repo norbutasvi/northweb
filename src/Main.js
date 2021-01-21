@@ -4,11 +4,6 @@ import Review from './Review';
 import getPostsData from './posts';
 import Form from './Form';
 
-import {
-    BrowserView,
-    MobileView
-  } from "react-device-detect";
-
 // IMAGES
 import logo from './images/logo.png';
 import team from './images/team.jpg';
