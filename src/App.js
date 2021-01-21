@@ -1,18 +1,12 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './style.css';
 import menu from './images/menu.svg';
 import close from './images/close-button.svg';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import Aside from './Aside';
 import Main from './Main';
-import ReactGA from 'react-ga';
 
 function App() {
-
-  useEffect(() => {
-    ReactGA.initialize('G-PMDV1CGMPD');
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
 
   const handleClick = () => {
     const aside = document.querySelector('aside');
@@ -29,7 +23,7 @@ function App() {
     }
   }
 
-  const handlePopup = (e) => {
+  const closePopup = (e) => {
     e.target.parentNode.parentNode.style.display = 'none';
   }
 
@@ -58,7 +52,7 @@ function App() {
   return (
     <div className="App" onClick={(e) => handleNavAppearance(e)}>
       <div class="msg-success">
-        <div class="close-msg" onClick={handlePopup}>
+        <div class="close-msg" onClick={closePopup}>
           <img alt="" src={close} width="30px"/>
         </div>
         <h1>Žinutė išsiųsta</h1>

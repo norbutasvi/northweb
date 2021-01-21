@@ -95,8 +95,8 @@ function Main() {
                     <p>
                     Kadangi projektui skiriamas didelis dėmesys dizaino 
                     elementams ir tinkamam funkcionalumo užbaigtumui, 
-                    priklausomai nuo projekto dydžio, darbų trukmė - 
-                    <span>apie 2 savaitės</span>.
+                    priklausomai nuo projekto dydžio, darbų trukmė -
+                    <span> apie 2 savaitės</span>.
                     </p>
                 </div>
             </div>
@@ -117,9 +117,6 @@ function Main() {
                         <div class="item">
                             <img alt="" src={ecotrip} class="icon centered"/>
                         </div>
-                        {/* <div class="item">
-                            <img src={languekspertai} class="icon" />
-                        </div> */}
                         <div class="item">
                             <img alt="" src={kalda_fb} width="200px" />
                         </div>
@@ -221,7 +218,7 @@ function Main() {
                                                 <div class="icon">
                                                     <img alt="" src={slider} />
                                                 </div>
-                                                <p>Svetainėje suprogramuoti du slaiderių komponentai.</p>
+                                                <p>Įdiegti du slaiderių komponentai.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
@@ -330,7 +327,7 @@ function Main() {
                                                 <div class="icon">
                                                     <img alt="" src={slider} />
                                                 </div>
-                                                <p>Svetainėje suprogramuoti du slaiderių komponentai.</p>
+                                                <p>Įdiegtas slaiderio komponentas</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
@@ -344,7 +341,7 @@ function Main() {
                                                     <img alt="" src={picture} />
                                                 </div>
                                                 <p>
-                                                    Įdiegtas atliktų darbų nuotraukų galerijos modulis.
+                                                    Įdiegtas nuotraukų galerijos modulis.
                                                 </p>
                                             </li>
                                             <li>
@@ -447,7 +444,7 @@ function Main() {
                                                 <div class="icon">
                                                     <img alt="" src={slider} />
                                                 </div>
-                                                <p>Svetainėje suprogramuoti du slaiderių komponentai.</p>
+                                                <p>Įdiegti du slaiderių komponentai.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
@@ -582,7 +579,7 @@ function Main() {
                                                 <div class="icon">
                                                     <img alt="" src={slider} />
                                                 </div>
-                                                <p>Svetainėje suprogramuoti du slaiderių komponentai.</p>
+                                                <p>Įdiegti suprogramuoti du slaiderių komponentai.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
@@ -595,7 +592,7 @@ function Main() {
                                                     <img alt="" src={picture} />
                                                 </div>
                                                 <p>
-                                                    Įdiegtas atliktų darbų nuotraukų galerijos modulis.
+                                                    Įdiegtas nuotraukų galerijos modulis.
                                                 </p>
                                             </li>
                                             <li>

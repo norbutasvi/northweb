@@ -3,8 +3,11 @@ import axios from 'axios';
 import phone from './images/phone.png';
 import letter from './images/letter.png';
 import loader from './images/loader.gif';
+import {getBaseUrl} from './environment';
 
 function Form() {
+
+    const baseUrl = getBaseUrl();
 
     const [formData, setFormData] = useState({
         name: '',
@@ -65,7 +68,7 @@ function Form() {
         e.target.style.background = 'grey';
         e.target.style.cursor = 'wait';
 
-        axios.post('http://localhost:5000/api/forma', formData)
+        axios.post(`${baseUrl}/api/forma`, formData)
         .then(res => {
             setIsSending(false);
             
