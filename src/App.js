@@ -1,3 +1,4 @@
+import React, {useEffect} from 'react';
 import './style.css';
 import menu from './images/menu.svg';
 import close from './images/close-button.svg';
@@ -6,10 +7,12 @@ import Aside from './Aside';
 import Main from './Main';
 import ReactGA from 'react-ga';
 
-ReactGA.initialize('G-PMDV1CGMPD');
-ReactGA.pageview(window.location.pathname + window.location.search);
-
 function App() {
+
+  useEffect(() => {
+    ReactGA.initialize('G-PMDV1CGMPD');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   const handleClick = () => {
     const aside = document.querySelector('aside');
