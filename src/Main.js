@@ -857,51 +857,6 @@ function Main() {
             <div class="logo-separator"></div>
             <h2 class="text-center">KONTAKTAI</h2>
             <div class="wrapper">
-                {/* <form>
-                    <div class="info-box">
-                        <div class="info-box__item">
-                            <img alt="" src={phone} width="20px" />
-                            <div class="text">
-                                <p>
-                                    <strong>TELEFONO NUMERIS</strong><br />
-                                    +37063631839
-                                </p>
-                            </div>
-                        </div>
-                        <div class="info-box__item">
-                            <img alt="" src={letter} width="20px" />
-                            <div class="text">
-                                <p>
-                                    <strong>EL. PAŠTO ADRESAS</strong><br />
-                                    info@northweb.lt
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-block left">
-                        <div class="input-item">
-                            <label>Vardas</label><br />
-                            <input type="text" />
-                        </div>
-                        <div class="input-item">
-                            <label>Pavadinimas</label><br />
-                            <input type="text" />
-                        </div>
-                        <div class="input-item">
-                            <label>Jūsų el. pašto adresas</label><br />
-                            <input type="text" />
-                        </div>
-                    </div>
-                    <div class="form-block right">
-                        <div class="input-item">
-                            <label>Žinutė</label><br />
-                            <textarea id="message" selectionDirection="forward" selectionStart="0" selectionEnd="0"></textarea>
-                        </div>
-                        <div class="submit-button">
-                            <input type="submit" value="SIŲSTI"/>
-                        </div>
-                    </div>
-                </form> */}
                 <Form />
             </div>
         </div>

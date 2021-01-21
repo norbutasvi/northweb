@@ -107,7 +107,7 @@ function Form() {
                     <div class="text">
                         <p>
                             <strong>EL. PAŠTO ADRESAS</strong><br />
-                            info@northweb.lt
+                            siaurespuslapiai@gmail.com
                         </p>
                     </div>
                 </div>
