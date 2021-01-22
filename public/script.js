@@ -94,17 +94,6 @@ window.addEventListener('load', () => {
     // RESPONSIVE NAV
     const menuButton = document.querySelector('#menu-button');
     const aside = document.querySelector('aside');
-
-    // menuButton.addEventListener('click', (e) => {
-    //     if (aside.classList.contains('active')) {
-    //         menuButton.innerHTML = '<img src="images/menu.svg" width="40px" />';
-    //         aside.classList.toggle('active');
-    //         menuButton.classList.toggle('active-btn');
-    //     } else {
-    //         menuButton.innerHTML = '<img src="images/close-button.svg" width="40px" />';
-    //         aside.classList.toggle('active');
-    //         menuButton.classList.toggle('active-btn');
-    //     }
     // })
 
 })
