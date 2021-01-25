@@ -594,15 +594,15 @@ aside nav ul li .title {
   padding: 50px;
 }
 
+@media only screen and (max-width: 600px) {
+  .main__container .section__testimonials .container .content .fb-feed .cover {
+    padding: 30px;
+  }
+}
+
 .main__container .section__testimonials .container .content .fb-feed .cover img {
   width: 50%;
   z-index: 100;
-}
-
-@media only screen and (max-width: 600px) {
-  .main__container .section__testimonials .container .content .fb-feed .cover img {
-    width: 100%;
-  }
 }
 
 .main__container .section__testimonials .container .content .fb-feed .cover .absolute {

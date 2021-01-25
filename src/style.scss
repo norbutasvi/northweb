@@ -472,13 +472,17 @@ aside {
                                 background: black;
                                 padding: 50px;
 
+                                @include phone {
+                                    padding: 30px;
+                                }
+
                                 img {
                                     width: 50%;
                                     z-index: 100;
 
-                                    @include phone {
-                                        width: 100%;
-                                    }
+                                    // @include phone {
+                                    //     width: 100%;
+                                    // }
                                 }
 
                                 .absolute {
