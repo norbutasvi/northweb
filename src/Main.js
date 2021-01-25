@@ -56,8 +56,7 @@ function Main() {
                         <p>
                         Laisvai samdomų programuotojo ir dizainerio komanda
                         sukurs Jums ne vien tik modernaus dizaino interneto
-                        svetainę, bet ir padarys ją matomą google ir kitose
-                        interneto terpėse. 
+                        svetainę ar elektroninę parduotuvę, bet ir padarys ją matomą įvairiose interneto terpėse.
                         </p>
                         <div class="buttons">
                             <a href="#kontaktai">
@@ -141,7 +140,7 @@ function Main() {
                         <h2 class="project__title">KALDA.LT</h2>
                         <p class="project__description">Statybos darbų svetainė</p>
                         <div class="content">
-                            <a href="http://kalda.lt" class="content__image">
+                            <a href="https://www.kalda.lt" class="content__image">
                                 <div class="background">
                                 </div>
                                 <div class="text">
@@ -741,7 +740,7 @@ function Main() {
                                 </div>
                             </div>
                             <div class="box__content">
-                                Kartu išsiaiškinsime ko siekia Jūsų įmonė ar vykdoma veikla, kokia yra didžiausi prioritetai, o tada kibsime į darbą.
+                                Kartu išsiaiškinsime ko siekia Jūsų įmonė ar vykdoma veikla, kokie yra didžiausi prioritetai, o tada kibsime į darbą.
                             </div>
                         </div>
                     </div>
