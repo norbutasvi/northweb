@@ -24,6 +24,7 @@ import altitude from './images/altitude.png';
 import sniurai from './images/sniurai.jpg';
 import audenis from './images/audenis.png';
 import ecotrip from './images/ecotrip.png';
+import kaunodalys_logo from './images/kaunodalys-logo.PNG';
 import fb_icon from './images/fb_icon.png';
 import kalda_fb from './images/kalda_fb.jpg';
 import kalda_website from './images/kalda_website.png';
@@ -31,6 +32,7 @@ import audenis_website from './images/audenis_website.png';
 import altitude_website from './images/altitude_website.png';
 import ecotrip_website from './images/ecotrip_website.png';
 import sniurai_website from './images/sniurai_website.png';
+import kaunodalys_website from './images/kaunodalys_website.png';
 import google_analytics from './images/google.svg';
 import picture from './images/picture.svg';
 import slider from './images/slider.svg';
@@ -107,7 +109,7 @@ function Main() {
                             <img alt="" src={altitude} width="200px" />
                         </div>
                         <div class="item">
-                            <img alt="" src={audenis} width="200px" />
+                            <img alt="" src={audenis} height="120px" />
                         </div>
                         <div class="item">
                             <img alt="" src={sniurai} class="icon" />
@@ -116,7 +118,10 @@ function Main() {
                             <img alt="" src={ecotrip} class="icon centered"/>
                         </div>
                         <div class="item">
-                            <img alt="" src={kalda_fb} width="200px" />
+                            <img alt="" src={kalda_fb} height="120px" />
+                        </div>
+                        <div class="item">
+                            <img alt="" src={kaunodalys_logo} height="120px" />
                         </div>
                     </div>
                     <div class="content flex-center">
@@ -708,6 +713,102 @@ function Main() {
                                                 <p>
                                                     Įdiegtas nuotraukų galerijos modulis.
                                                 </p>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={google_maps} />
+                                                </div>
+                                                <p>
+                                                    Įdiegtas interaktyvus google maps žemėlapis.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <h2 class="project__title">KAUNODALYS.LT</h2>
+                        <p class="project__description">Automobilių supirkimo ir dalių svetainė</p>
+                        <div class="content">
+                            <a href="https://kaunodalys.lt" class="content__image">
+                                <div class="background">
+                                </div>
+                                <div class="text">
+                                    <img alt="" src={search} height="26px"/>
+                                    NARŠYTI GYVAI
+                                </div>
+                                <img alt="" src={kaunodalys_website} />
+                            </a>
+                            <div class="content__completed">
+                                <div class="box">
+                                    <div class="box__top">
+                                        <div class="box__top__icon">
+                                            <img alt="" src={completed} />
+                                        </div>
+                                        <div class="box__top__title">
+                                            ATLIKTI DARBAI
+                                        </div>
+                                    </div>
+                                    <div class="box__content">
+                                        <ul>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={statistics} />
+                                                </div>
+                                                <p>Analizė ir tikslų nustatymas</p>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={prototype} />
+                                                </div>
+                                                <p>Svetainės prototipo sudarymas</p>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={paintPalette} />
+                                                </div>
+                                                <p>Svetainės dizainas</p>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={wordpress} />
+                                                </div>
+                                                <p>Turinio valdymo sistemos diegimas</p>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={upload} />
+                                                </div>
+                                                <p>Turinio sukėlimas į svetainę</p>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={database} />
+                                                </div>
+                                                <p>Svetainės failų patalpinimas į serverį</p>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={statisticsSvg} />
+                                                </div>
+                                                <p>SEO optimizavimas paieškos sistemoms</p>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={research} />
+                                                </div>
+                                                <p>Svetainės priežiūra ir administravimas</p>
+                                            </li>
+                                        </ul>
+                                        <div class="other-works">Kiti darbai</div>
+                                        <ul>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={google_analytics} />
+                                                </div>
+                                                <p>įdiegtas google analytics modulis.</p>
                                             </li>
                                             <li>
                                                 <div class="icon">
