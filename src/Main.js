@@ -34,6 +34,9 @@ import ecotrip_website from './images/ecotrip_website.png';
 import sniurai_website from './images/sniurai_website.png';
 import kaunodalys_website from './images/kaunodalys_website.png';
 import google_analytics from './images/google.svg';
+import designer from './images/designer.jpg';
+import programmer from './images/programmer.jpg';
+import programmer2 from './images/programmer2.jpg';
 import picture from './images/picture.svg';
 import slider from './images/slider.svg';
 import contact from './images/contact.svg';
@@ -56,9 +59,8 @@ function Main() {
                 <div class="section__wrapper">
                     <div class="left">
                         <p>
-                        Laisvai samdomų programuotojo ir dizainerio komanda
-                        sukurs Jums ne vien tik modernaus dizaino interneto
-                        svetainę ar elektroninę parduotuvę, bet ir padarys ją matomą įvairiose interneto terpėse.
+                        Sukursime Jums išskirtinai modernios išvaizdos interneto svetainę ar internetinę parduotuvę, siekiant padidinti Jūsų paslaugų ar prekių pardavimus. 
+                        Būtent tokia ir yra mūsų UI / UX dizainerio užduotis.
                         </p>
                         <div class="buttons">
                             <a href="#kontaktai">
@@ -96,8 +98,34 @@ function Main() {
                     Kadangi projektui skiriamas didelis dėmesys dizaino 
                     elementams ir tinkamam funkcionalumo užbaigtumui, 
                     priklausomai nuo projekto dydžio, darbų trukmė -
-                    <span> apie 2 savaitės</span>.
+                    <span> nuo 1 iki 2 savaičių</span>.
                     </p>
+                </div>
+            </div>
+            <div class="section__team">
+                <h2 class="text-center">KOMANDA</h2>
+                <div class="wrapper">
+                    <div class="member">
+                        <img src={programmer} alt="" class="staff-img"/>
+                        <div class="info">
+                            <h3>Vilius</h3>
+                            <p>Įkūrėjas ir programuotojas</p>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <img src={programmer2} alt="" class="staff-img"/>
+                        <div class="info">
+                            <h3>Marius</h3>
+                            <p>Programuotojas</p>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <img src={designer} alt="" class="staff-img"/>
+                        <div class="info">
+                            <h3>Rolandas</h3>
+                            <p>Dizaineris</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="section__testimonials" id="klientai">
