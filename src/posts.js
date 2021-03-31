@@ -10,7 +10,8 @@ import like from './images/like.png';
 
 
 function getPostsData() {
-    return [{
+    return [
+        {
         profile: {
             url: 'https://www.facebook.com/uabkalda',
             photo: kalda_fb,
