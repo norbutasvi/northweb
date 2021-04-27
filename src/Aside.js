@@ -24,7 +24,7 @@ function Aside() {
                         <li id="clients">
                             <img alt="" src={customers} class="menu-icon" />
                             <div class="title">
-                                KLIENTAI
+                                ATSILIEPIMAI
                             </div>
                         </li>
                         </a>

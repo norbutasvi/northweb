@@ -9,6 +9,8 @@ function Form() {
 
     const baseUrl = getBaseUrl();
 
+    console.log(baseUrl);
+    
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
