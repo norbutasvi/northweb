@@ -89,7 +89,7 @@ function Form() {
                 emailError: '', 
                 messageError: ''
             });
-        })
+        }).catch(error => console.log(error));
     }
 
     return (
