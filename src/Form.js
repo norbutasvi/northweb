@@ -73,7 +73,7 @@ function Form() {
         axios.post(`${baseUrl}/api/forma`, formData)
         .then(res => {
             setIsSending(false);
-            
+            console.log(res);
             const message = document.querySelector('.msg-success');
             message.style.display = 'block';
             e.target.style.background = '#042939';
