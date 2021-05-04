@@ -10,6 +10,12 @@
     }
 }
 
+@mixin tabletHigh {
+    @media only screen and (max-width: 1300px) {
+        @content;
+    }
+}
+
 @mixin phone {
     @media only screen and (max-width: 600px) {
         @content;
@@ -283,6 +289,10 @@ aside {
                             margin-bottom: 20px;
                         }
 
+                        @include tabletHigh {
+                            flex-direction: column;
+                        }
+
                         &:last-child {
                             @include phone {
                                 margin-bottom: 0px;
@@ -296,17 +306,33 @@ aside {
                             @include phone {
                                 width: 150px;
                             }
+
+                            @include tabletHigh {
+                                width: 150px;
+                            }
                         }
 
                         .info {
                             margin-left: 10px;
 
+                            @include tabletHigh {
+                                margin-top: 10px;
+                            }
+
                             h3 {
                                 margin: 0;
+
+                                @include tabletHigh {
+                                    text-align: center;
+                                }
                             }
 
                             p {
                                 margin: 0;
+
+                                @include tabletHigh {
+                                    text-align: center;
+                                }
                             }
                         }
                     }

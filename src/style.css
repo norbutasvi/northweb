@@ -330,6 +330,15 @@ aside nav ul li .title {
   }
 }
 
+@media only screen and (max-width: 1300px) {
+  .main__container .section__team .wrapper .member {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .main__container .section__team .wrapper .member:last-child {
     margin-bottom: 0px;
@@ -347,16 +356,40 @@ aside nav ul li .title {
   }
 }
 
+@media only screen and (max-width: 1300px) {
+  .main__container .section__team .wrapper .member .staff-img {
+    width: 150px;
+  }
+}
+
 .main__container .section__team .wrapper .member .info {
   margin-left: 10px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .main__container .section__team .wrapper .member .info {
+    margin-top: 10px;
+  }
 }
 
 .main__container .section__team .wrapper .member .info h3 {
   margin: 0;
 }
 
+@media only screen and (max-width: 1300px) {
+  .main__container .section__team .wrapper .member .info h3 {
+    text-align: center;
+  }
+}
+
 .main__container .section__team .wrapper .member .info p {
   margin: 0;
+}
+
+@media only screen and (max-width: 1300px) {
+  .main__container .section__team .wrapper .member .info p {
+    text-align: center;
+  }
 }
 
 .main__container .section__wrapper {
