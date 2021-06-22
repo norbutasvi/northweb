@@ -71,7 +71,7 @@ function App() {
         pageId="100819872017471"
         appId="269807374543748"
       /> */}
-      <a href='tel:+37063631839' className='call'>
+      <a href={'tel:+37063631839'} className='call'>
         <img alt="" src={phone} />
       </a>
       <a onClick={(e) => handleOpacity(e)} className='call-without-call'>
