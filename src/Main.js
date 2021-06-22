@@ -6,7 +6,6 @@ import Form from './Form';
 
 // IMAGES
 import logo from './images/logo.png';
-import team from './images/team.jpg';
 import euro from './images/eurosvg.svg';
 import workFromHome from './images/work-from-home.svg';
 import duration from './images/duration.svg';
@@ -47,7 +46,7 @@ import schedule from './images/schedule.svg';
 import languages from './images/languages.png';
 import worldwithoutviruses from './images/worldwithoutviruses.png';
 import vision_image from './images/vision_image.jpg';
-import partners from './images/partners.jpg';
+// import partners from './images/partners.jpg';
 
 function Main() {
 

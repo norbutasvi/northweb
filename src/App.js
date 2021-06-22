@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './style.css';
 import menu from './images/menu.svg';
 import phone from './images/phone_call.png';
 import close from './images/close-button.svg';
-import MessengerCustomerChat from 'react-messenger-customer-chat';
 import Aside from './Aside';
 import Main from './Main';
 
@@ -73,11 +72,11 @@ function App() {
         appId="269807374543748"
       /> */}
       <a href='tel:+37063631839' className='call'>
-        <img src={phone} />
+        <img alt="" src={phone} />
       </a>
       <a onClick={(e) => handleOpacity(e)} className='call-without-call'>
         <div class='number' id='number'>+37063631839</div>
-        <img src={phone} />
+        <img alt="" src={phone} />
       </a>
     </div>
   );
