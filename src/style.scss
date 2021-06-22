@@ -87,6 +87,10 @@ h2 {
     margin: 15px;
     cursor: pointer;
     z-index: 4;
+    background: #013553;
+    padding: 7px;
+    right: 0px;
+    border: 1px solid white;
 
     @include phone {
         display: block;
@@ -103,7 +107,7 @@ h2 {
 }
 
 .active-btn {
-    transform: translateX(100px);
+    transform: translateX(-100px);
     transition: 0.3s ease;
 }
 
@@ -147,6 +151,10 @@ aside {
     @include tablet {
         width: 0px;
         overflow: hidden;
+    }
+
+    @include phone {
+        right: 0px;
     }
 
     .logo {
@@ -210,6 +218,10 @@ aside {
         header {
             text-align: center;
             padding: 30px 0px;
+
+            @include phone {
+                padding: 15px 0px;
+            }
         }
 
         .section {
@@ -242,6 +254,12 @@ aside {
                     border-right: 1px solid $lightestBlue;
                     text-align: center;
                     padding: 20px;
+
+                    img {
+                        @include phone {
+                            width: 45px;
+                        }
+                    }
 
                     &:first-child {
                         padding-left: 0;
@@ -374,6 +392,10 @@ aside {
                         @include tablet {
                             font-size: 18px;
                         }
+
+                        @include phone {
+                            font-size: 18px;
+                        }
                     }
 
                     .buttons {
@@ -398,8 +420,8 @@ aside {
                             }
 
                             @include phone {
-                                font-size: 20px;
-                                padding: 15px;
+                                font-size: 18px;
+                                padding: 10px;
                             }
 
                             &:hover {
@@ -423,8 +445,8 @@ aside {
 
                             @include phone {
                                 margin: 0;
-                                font-size: 20px;
-                                padding: 15px;
+                                font-size: 18px;
+                                padding: 10px;
                             }
 
                             &:hover {
@@ -508,8 +530,9 @@ aside {
                                 }
 
                                 @include tablet {
-                                    width: 120px;
-                                    margin: 30px;
+                                    width: 100%;
+                                    height: auto;
+                                    padding: 10px;
                                 }
                             }
                         }
@@ -1056,3 +1079,100 @@ aside {
         }
     }
 }
+
+.show {
+    display: block !important;
+}
+
+.call-without-call {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 30px;
+    background: white;
+    width: 75px;
+    padding: 5px;
+    border-radius: 50%;
+    animation: mymove 1s infinite;
+    cursor: pointer;
+
+    @include phone {
+        display: none;
+    }
+
+    .number {
+        position: absolute;
+        background: #0C729E;
+        right: 0px;
+        top: -70px;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 20px;
+        display: none;
+        pointer-events: none;
+
+        @include phone {
+            display: none;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    @include phone {
+        left: 0px;
+        width: 70px;
+        z-index: 99;
+        margin: 20px;
+    }
+}
+
+.call {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 30px;
+    background: white;
+    width: 75px;
+    padding: 5px;
+    border-radius: 50%;
+    animation: mymove 1s infinite;
+    display: none;
+
+    @include phone {
+        display: block;
+    }
+
+    .number {
+        position: absolute;
+        background: #0C729E;
+        right: 0px;
+        top: -70px;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 20px;
+        display: none;
+
+        @include phone {
+            display: none;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    @include phone {
+        left: 0px;
+        width: 70px;
+        z-index: 99;
+        margin: 20px;
+    }
+}
+
+@keyframes mymove {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.1)}
+    100% {transform: scale(1)}
+  }

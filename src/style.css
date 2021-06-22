@@ -62,6 +62,10 @@ h2 {
   margin: 15px;
   cursor: pointer;
   z-index: 4;
+  background: #013553;
+  padding: 7px;
+  right: 0px;
+  border: 1px solid white;
 }
 
 @media only screen and (max-width: 600px) {
@@ -83,8 +87,8 @@ h2 {
 }
 
 .active-btn {
-  -webkit-transform: translateX(100px);
-          transform: translateX(100px);
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
@@ -139,6 +143,12 @@ aside {
   aside {
     width: 0px;
     overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  aside {
+    right: 0px;
   }
 }
 
@@ -222,6 +232,12 @@ aside nav ul li .title {
   padding: 30px 0px;
 }
 
+@media only screen and (max-width: 600px) {
+  .main__container header {
+    padding: 15px 0px;
+  }
+}
+
 .main__container .section__col-2 {
   width: 100%;
 }
@@ -265,6 +281,12 @@ aside nav ul li .title {
   border-right: 1px solid #0C729E;
   text-align: center;
   padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main__container .section__col-3 .item img {
+    width: 45px;
+  }
 }
 
 .main__container .section__col-3 .item:first-child {
@@ -457,6 +479,12 @@ aside nav ul li .title {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .main__container .section__wrapper .left p {
+    font-size: 18px;
+  }
+}
+
 .main__container .section__wrapper .left .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,8 +520,8 @@ aside nav ul li .title {
 
 @media only screen and (max-width: 600px) {
   .main__container .section__wrapper .left .buttons .btn-primary {
-    font-size: 20px;
-    padding: 15px;
+    font-size: 18px;
+    padding: 10px;
   }
 }
 
@@ -522,8 +550,8 @@ aside nav ul li .title {
 @media only screen and (max-width: 600px) {
   .main__container .section__wrapper .left .buttons .btn-secondary {
     margin: 0;
-    font-size: 20px;
-    padding: 15px;
+    font-size: 18px;
+    padding: 10px;
   }
 }
 
@@ -637,8 +665,9 @@ aside nav ul li .title {
 
 @media only screen and (max-width: 1040px) {
   .main__container .section__testimonials .container .content .item img {
-    width: 120px;
-    margin: 30px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
   }
 }
 
@@ -1313,5 +1342,140 @@ aside nav ul li .title {
   background: #042939;
   margin-top: 50px;
   text-align: center;
+}
+
+.show {
+  display: block !important;
+}
+
+.call-without-call {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  margin: 30px;
+  background: white;
+  width: 75px;
+  padding: 5px;
+  border-radius: 50%;
+  -webkit-animation: mymove 1s infinite;
+          animation: mymove 1s infinite;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .call-without-call {
+    display: none;
+  }
+}
+
+.call-without-call .number {
+  position: absolute;
+  background: #0C729E;
+  right: 0px;
+  top: -70px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  display: none;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .call-without-call .number {
+    display: none;
+  }
+}
+
+.call-without-call img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .call-without-call {
+    left: 0px;
+    width: 70px;
+    z-index: 99;
+    margin: 20px;
+  }
+}
+
+.call {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  margin: 30px;
+  background: white;
+  width: 75px;
+  padding: 5px;
+  border-radius: 50%;
+  -webkit-animation: mymove 1s infinite;
+          animation: mymove 1s infinite;
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .call {
+    display: block;
+  }
+}
+
+.call .number {
+  position: absolute;
+  background: #0C729E;
+  right: 0px;
+  top: -70px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .call .number {
+    display: none;
+  }
+}
+
+.call img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .call {
+    left: 0px;
+    width: 70px;
+    z-index: 99;
+    margin: 20px;
+  }
+}
+
+@-webkit-keyframes mymove {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes mymove {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 /*# sourceMappingURL=style.css.map */

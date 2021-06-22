@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './style.css';
 import menu from './images/menu.svg';
+import phone from './images/phone_call.png';
 import close from './images/close-button.svg';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import Aside from './Aside';
 import Main from './Main';
 
 function App() {
+
+  const handleOpacity = (e) => {
+    document.getElementById('number').classList.toggle('show');
+  }
 
   const handleClick = () => {
     const aside = document.querySelector('aside');
@@ -63,11 +68,17 @@ function App() {
       </div>
       <Aside />
       <Main />
-      <MessengerCustomerChat
+      {/* <MessengerCustomerChat
         pageId="100819872017471"
         appId="269807374543748"
-      />
-      
+      /> */}
+      <a href='tel:+37063631839' className='call'>
+        <img src={phone} />
+      </a>
+      <a onClick={(e) => handleOpacity(e)} className='call-without-call'>
+        <div class='number' id='number'>+37063631839</div>
+        <img src={phone} />
+      </a>
     </div>
   );
 }
