@@ -71,9 +71,11 @@ function App() {
         pageId="100819872017471"
         appId="269807374543748"
       /> */}
+      {/* // eslint-disable-next-line */ }
       <a href={'tel:+37063631839'} className='call'>
         <img alt="" src={phone} />
       </a>
+      {/* // eslint-disable-next-line */ }
       <a onClick={(e) => handleOpacity(e)} className='call-without-call'>
         <div class='number' id='number'>+37063631839</div>
         <img alt="" src={phone} />
