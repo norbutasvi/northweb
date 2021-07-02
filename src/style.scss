@@ -1076,6 +1076,11 @@ aside {
             background: $darkBlue;
             margin-top: 50px;
             text-align: center;
+
+            .tags {
+                text-align: center;
+                font-size: 9px;
+            }
         }
     }
 }

@@ -1344,6 +1344,11 @@ aside nav ul li .title {
   text-align: center;
 }
 
+.main__container .footer .tags {
+  text-align: center;
+  font-size: 9px;
+}
+
 .show {
   display: block !important;
 }

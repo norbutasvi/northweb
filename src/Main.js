@@ -1115,7 +1115,8 @@ function Main() {
             </div>
         </div>
         <div class="footer">
-            Copyright <strong>©</strong> 2021. Sprendimas northweb.lt
+            Copyright <strong>©</strong> 2021. Sprendimas northweb.lt<br />
+            <div class='tags'>Svetainiu kurimas | Tinklapiu kurimas</div>
         </div>
         </div>
     )
