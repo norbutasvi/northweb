@@ -559,6 +559,13 @@ aside nav ul li .title {
   background: #0C709B;
 }
 
+.main__container .section__wrapper .left .info {
+  background: #09777a;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
 .main__container .section__wrapper .right {
   width: 50%;
 }

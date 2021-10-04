@@ -25,8 +25,6 @@ import audenis from './images/audenis.png';
 import ecotrip from './images/ecotrip.png';
 import kaunodalys_logo from './images/kaunodalys-logo.PNG';
 import fb_icon from './images/fb_icon.png';
-import kalda_fb from './images/kalda_fb.jpg';
-import kalda_website from './images/kalda_website.png';
 import audenis_website from './images/audenis_website.png';
 import altitude_website from './images/altitude_website.png';
 import ecotrip_website from './images/ecotrip_website.png';
@@ -46,7 +44,9 @@ import schedule from './images/schedule.svg';
 import languages from './images/languages.png';
 import worldwithoutviruses from './images/worldwithoutviruses.png';
 import vision_image from './images/vision_image.jpg';
+import uvlc_website from './images/uvlc_website.png';
 // import partners from './images/partners.jpg';
+import uvlc_logo3 from './images/uvlc_logo3.PNG';
 
 function Main() {
 
@@ -62,6 +62,9 @@ function Main() {
                         <p>
                         Sukursime Jums išskirtinai modernios išvaizdos interneto svetainę, siekiant padidinti Jūsų paslaugų ar prekių pardavimus. Kainos ir kokybės santykį garantuojame.
                         </p>
+                        <div className="info">
+                            Naudojame naujausią web kūrimo technologiją, kurios dėka nereikia mokėti už hostingo (talpinimo) paslaugą ir svetainė veikia labai sparčiai, o tai reiškia, kad SEO (svetainės matomumo paieškose) rezultatai jus nustebins.
+                        </div>
                         <div class="buttons">
                             <a href="#kontaktai">
                                 <div class="btn-primary">UŽSAKYTI</div>
@@ -146,10 +149,10 @@ function Main() {
                             <img alt="" src={ecotrip} class="icon centered"/>
                         </div>
                         <div class="item">
-                            <img alt="" src={kalda_fb} height="120px" />
+                            <img alt="" src={uvlc_logo3} height="90px" />
                         </div>
                         <div class="item">
-                            <img alt="" src={kaunodalys_logo} height="120px" />
+                            <img alt="" src={kaunodalys_logo} height="90px" />
                         </div>
                     </div>
                     <div class="content flex-center">
@@ -170,17 +173,17 @@ function Main() {
                 <div class="wrapper">
                     <h2 class="text-center">PROJEKTAI</h2>
                     <div class="project">
-                        <h2 class="project__title">AUDENIS.LT</h2>
-                        <p class="project__description">Kurortinio viešbučio svetainė</p>
+                        <h2 class="project__title">UVLC.LT</h2>
+                        <p class="project__description">Langų ir medienos darbų svetainė</p>
                         <div class="content">
-                            <a href="http://audenis.lt" class="content__image">
+                            <a href="https://uvlc.lt" class="content__image">
                                 <div class="background">
                                 </div>
                                 <div class="text">
                                     <img alt="" src={search} height="26px"/>
                                     NARŠYTI GYVAI
                                 </div>
-                                <img alt="" src={audenis_website} />
+                                <img alt="" src={uvlc_website} />
                             </a>
                             <div class="content__completed">
                                 <div class="box">
@@ -194,18 +197,6 @@ function Main() {
                                     </div>
                                     <div class="box__content">
                                         <ul>
-                                            <li>
-                                                <div class="icon">
-                                                    <img alt="" src={statistics} />
-                                                </div>
-                                                <p>Analizė ir tikslų nustatymas</p>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <img alt="" src={prototype} />
-                                                </div>
-                                                <p>Svetainės prototipo sudarymas</p>
-                                            </li>
                                             <li>
                                                 <div class="icon">
                                                     <img alt="" src={paintPalette} />
@@ -387,6 +378,123 @@ function Main() {
                                                 </div>
                                                 <p>
                                                     Įdiegtas atliktų darbų nuotraukų galerijos modulis.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={google_maps} />
+                                                </div>
+                                                <p>
+                                                    Įdiegtas interaktyvus google maps žemėlapis.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <h2 class="project__title">AUDENIS.LT</h2>
+                        <p class="project__description">Kurortinio viešbučio svetainė</p>
+                        <div class="content">
+                            <a href="http://audenis.lt" class="content__image">
+                                <div class="background">
+                                </div>
+                                <div class="text">
+                                    <img alt="" src={search} height="26px"/>
+                                    NARŠYTI GYVAI
+                                </div>
+                                <img alt="" src={audenis_website} />
+                            </a>
+                            <div class="content__completed">
+                                <div class="box">
+                                    <div class="box__top">
+                                        <div class="box__top__icon">
+                                            <img alt="" src={completed} />
+                                        </div>
+                                        <div class="box__top__title">
+                                            ATLIKTI DARBAI
+                                        </div>
+                                    </div>
+                                    <div class="box__content">
+                                        <ul>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={statistics} />
+                                                </div>
+                                                <p>Analizė ir tikslų nustatymas</p>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={prototype} />
+                                                </div>
+                                                <p>Svetainės prototipo sudarymas</p>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={paintPalette} />
+                                                </div>
+                                                <p>Svetainės dizainas</p>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={wordpress} />
+                                                </div>
+                                                <p>Turinio valdymo sistemos diegimas</p>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={upload} />
+                                                </div>
+                                                <p>Turinio sukėlimas į svetainę</p>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={database} />
+                                                </div>
+                                                <p>Svetainės failų patalpinimas į serverį</p>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={statisticsSvg} />
+                                                </div>
+                                                <p>SEO optimizavimas paieškos sistemoms</p>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={research} />
+                                                </div>
+                                                <p>Svetainės priežiūra ir administravimas</p>
+                                            </li>
+                                        </ul>
+                                        <div class="other-works">Kiti darbai</div>
+                                        <ul>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={contact} />
+                                                </div>
+                                                <p>Įdiegta kontaktų forma.</p>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={slider} />
+                                                </div>
+                                                <p>Įdiegtas slaiderio komponentas</p>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={google_analytics} />
+                                                </div>
+                                                <p>įdiegtas google analytics modulis leidžiantis stebėti vartotojų srautą ir daryti 
+                                                jų veiklos svetainėje analizę.</p>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img alt="" src={picture} />
+                                                </div>
+                                                <p>
+                                                    Įdiegtas nuotraukų galerijos modulis.
                                                 </p>
                                             </li>
                                             <li>
@@ -654,10 +762,10 @@ function Main() {
                         </div>
                     </div>
                     <div class="project">
-                        <h2 class="project__title">WORLDWITHOUTVIRUSES</h2>
+                        <h2 class="project__title">WORLDWITHOUTVIRUSES.EU</h2>
                         <p class="project__description">Oro recirkuliatorių svetainė</p>
                         <div class="content">
-                            <a href="http://worldwithoutviruses.eu" class="content__image">
+                            <a href="https://worldwithoutviruses.eu" class="content__image">
                                 <div class="background">
                                 </div>
                                 <div class="text">
