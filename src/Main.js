@@ -200,7 +200,7 @@ function Main({ location }) {
                     <div class="member">
                         <img src={programmer} alt="" class="staff-img"/>
                         <div class="info">
-                            <h3>Vilius</h3>
+                            <h3>Marius</h3>
                             <p>Įkūrėjas ir programuotojas</p>
                         </div>
                     </div>
