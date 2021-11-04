@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import Header from './Header';
 import Review from './Review';
 import getPostsData from './posts';
 import Form from './Form';
+import axios from 'axios';
+import { browserName } from 'react-device-detect';
 
 // IMAGES
 import logo from './images/logo.png';
@@ -48,9 +50,96 @@ import uvlc_website from './images/uvlc_website.png';
 // import partners from './images/partners.jpg';
 import uvlc_logo3 from './images/uvlc_logo3.PNG';
 
-function Main() {
+function Main({ location }) {
+
+    const didMount = useRef(false);
 
     const posts = getPostsData();
+    console.log(location);
+
+    // const createPost = async () => {
+    //     axios.post('https://pilviskiai-adminarea.herokuapp.com/info', {
+    //         "ip": data.ip,
+    //         "country_code": data.country_code,
+    //         "country_name": data.country_name,
+    //         "city":data.city,
+    //         "postal":data.postal,
+    //         "latitude":data.latitude,
+    //         "longitude":data.longitude,
+    //         "state":data.state,
+    //         "browser": data.browser
+    //     })
+    //     .then(res => console.log(res.data));
+    // }
+
+    const [data, setData] = useState({
+        ip: '',
+        country_code: '',
+        country_name: '',
+        city: '',
+        postal: '',
+        latitude: '',
+        longitude: '',
+        state: '',
+        browser: ''
+    });
+    
+
+    const getData = async () => {
+        axios.get('https://geolocation-db.com/json/')
+        .then(res => {
+            setData({
+                ip: res.data.IPv4,
+                country_code: res.data.country_code,
+                country_name: res.data.country_name,
+                city:res.data.city,
+                postal:res.data.postal,
+                latitude:res.data.latitude,
+                longitude:res.data.longitude,
+                state:res.data.state,
+                browser: browserName
+            })
+        });
+    }
+
+    useEffect(() => {
+        if (new URLSearchParams(window.location.search).get("hello")) {
+            console.log('found param')
+            getData();
+        } else {
+            console.log('not found param')
+        }
+    }, [])
+
+    useEffect(() => {
+        if (didMount.current) {
+        const postData = () => {
+            axios.post('https://pilviskiai-adminarea.herokuapp.com/infos', {
+                ip: data.ip,
+                country_code: data.country_code,
+                country_name: data.country_name,
+                city:data.city,
+                postal:data.postal,
+                latitude:data.latitude.toString(),
+                longitude:data.longitude.toString(),
+                state:data.state,
+                browser: browserName
+            }, {
+                headers: {
+                    'Content-Type':'application/json',
+                    'Accept': 'application/json'
+                }
+            })
+            .then(res => console.log(res.data))
+            .catch(err => console.log(err));
+        }
+
+        postData();
+        console.log(data)
+    } else {
+        didMount.current = true;
+    }
+    }, [data])
 
     return (
         <div class="main__container">
